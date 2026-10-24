@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AA027CB5D4F836D4CAF329 /* TBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F7B7D955966A25F7EA1B80 /* TBWebView.m */; };
+		0FDC2C5650FE6897E98A9D95 /* adblock.js in Resources */ = {isa = PBXBuildFile; fileRef = 3E56CA80C1B8A3EE9DDDD57D /* adblock.js */; };
+		1511978D1B3A16F1A92C059F /* PageScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD02F0FD1F979F3ADFD203 /* PageScripts.swift */; };
+		30F5BABDF9DCE223ECC85206 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677F031EF66EE95C2180DD9 /* BrowserViewController.swift */; };
+		3172CEA3E08D17E2B686DCBC /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB44AB57B19A37005235C1 /* StartPage.swift */; };
+		48A3E86FDBC2FD1FC3916583 /* URLInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8DC62540AA4B768F2C5143 /* URLInput.swift */; };
+		821C68459285446C967C057F /* NativeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95433426CA12F350163A212 /* NativeVideoPlayer.swift */; };
+		892ACC22ADBF976F3EA5B733 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB20A9622E6ABFDCFEB2D8 /* Cursor.swift */; };
+		92F27F42EFEC57FE5C02A772 /* video.js in Resources */ = {isa = PBXBuildFile; fileRef = DB99A5710345DB7FF5E87006 /* video.js */; };
+		B07B969F917B5FA61E6F268A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472681BDD1C27F2D7A672B30 /* AppDelegate.swift */; };
+		CFBEF7F81DD40286857DFB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48CE3A6E0CD25D57CF5DB30 /* Assets.xcassets */; };
+		D05320064945CED7D1386788 /* RemoteControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E615F4EA701E961A85D3D /* RemoteControlUITests.swift */; };
+		E059862B6D8CB4D8946F2B43 /* TBWebKitShims.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B6FFF19EDC79B6B115AB5 /* TBWebKitShims.m */; };
+		E8731C1A180D1035CD61F72E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DAAA21FB6D6E0E7F56756 /* Store.swift */; };
+		EB86F74192F728519D689038 /* SiteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B25A7B3D7CAA82BED1E0 /* SiteRules.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F6E56DBEE4796376776658A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAA5E9FDB02750F05E87C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 695959FC76F16F975A95D833;
+			remoteInfo = TVBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112DB35043310935BB39A939 /* TVBrowser.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TVBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8DAAA21FB6D6E0E7F56756 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3E56CA80C1B8A3EE9DDDD57D /* adblock.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = adblock.js; sourceTree = "<group>"; };
+		472681BDD1C27F2D7A672B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		695B6FFF19EDC79B6B115AB5 /* TBWebKitShims.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBWebKitShims.m; sourceTree = "<group>"; };
+		69B27C486E4C4D7CB7E8DD3E /* TBWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBWebView.h; sourceTree = "<group>"; };
+		69F7B7D955966A25F7EA1B80 /* TBWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBWebView.m; sourceTree = "<group>"; };
+		A4DB44AB57B19A37005235C1 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		C23E615F4EA701E961A85D3D /* RemoteControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlUITests.swift; sourceTree = "<group>"; };
+		C677F031EF66EE95C2180DD9 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		C6AB508A30ED7EB929C9B504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C7AB20A9622E6ABFDCFEB2D8 /* Cursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
+		C95433426CA12F350163A212 /* NativeVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeVideoPlayer.swift; sourceTree = "<group>"; };
+		CA8DC62540AA4B768F2C5143 /* URLInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInput.swift; sourceTree = "<group>"; };
+		D48CE3A6E0CD25D57CF5DB30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB99A5710345DB7FF5E87006 /* video.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = video.js; sourceTree = "<group>"; };
+		E2BD02F0FD1F979F3ADFD203 /* PageScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScripts.swift; sourceTree = "<group>"; };
+		E57489B4F16010099E8CEB41 /* TVBrowserUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TVBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED4B25A7B3D7CAA82BED1E0 /* SiteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRules.swift; sourceTree = "<group>"; };
+		FAFB868BB3449425AEC00EC3 /* TVBrowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1C78D835EB3FFDC5C263D626 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3E56CA80C1B8A3EE9DDDD57D /* adblock.js */,
+				DB99A5710345DB7FF5E87006 /* video.js */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		391C22B762DB06D50B634C87 /* TVBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				472681BDD1C27F2D7A672B30 /* AppDelegate.swift */,
+				D48CE3A6E0CD25D57CF5DB30 /* Assets.xcassets */,
+				C677F031EF66EE95C2180DD9 /* BrowserViewController.swift */,
+				C7AB20A9622E6ABFDCFEB2D8 /* Cursor.swift */,
+				C6AB508A30ED7EB929C9B504 /* Info.plist */,
+				C95433426CA12F350163A212 /* NativeVideoPlayer.swift */,
+				E2BD02F0FD1F979F3ADFD203 /* PageScripts.swift */,
+				EED4B25A7B3D7CAA82BED1E0 /* SiteRules.swift */,
+				A4DB44AB57B19A37005235C1 /* StartPage.swift */,
+				3B8DAAA21FB6D6E0E7F56756 /* Store.swift */,
+				FAFB868BB3449425AEC00EC3 /* TVBrowser-Bridging-Header.h */,
+				CA8DC62540AA4B768F2C5143 /* URLInput.swift */,
+				1C78D835EB3FFDC5C263D626 /* Scripts */,
+				F26C0B2648779F8C7CAC1676 /* WebKitBridge */,
+			);
+			path = TVBrowser;
+			sourceTree = "<group>";
+		};
+		A0F5CEBB379F84A3875B7515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				112DB35043310935BB39A939 /* TVBrowser.app */,
+				E57489B4F16010099E8CEB41 /* TVBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C211B5B5B7FC4F2892DFDB7E /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C23E615F4EA701E961A85D3D /* RemoteControlUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		EACFF2AA2AD02EB087068562 = {
+			isa = PBXGroup;
+			children = (
+				391C22B762DB06D50B634C87 /* TVBrowser */,
+				C211B5B5B7FC4F2892DFDB7E /* UITests */,
+				A0F5CEBB379F84A3875B7515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26C0B2648779F8C7CAC1676 /* WebKitBridge */ = {
+			isa = PBXGroup;
+			children = (
+				695B6FFF19EDC79B6B115AB5 /* TBWebKitShims.m */,
+				69B27C486E4C4D7CB7E8DD3E /* TBWebView.h */,
+				69F7B7D955966A25F7EA1B80 /* TBWebView.m */,
+			);
+			path = WebKitBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		695959FC76F16F975A95D833 /* TVBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8EB78FCA3EFCFA13DA19D9 /* Build configuration list for PBXNativeTarget "TVBrowser" */;
+			buildPhases = (
+				A1BB0D5DF7593D4DC282B680 /* Sources */,
+				C20594E10C3DFA7B694DA19F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVBrowser;
+			packageProductDependencies = (
+			);
+			productName = TVBrowser;
+			productReference = 112DB35043310935BB39A939 /* TVBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8F9AFDC7BC4B5ABAC8D1D2E /* TVBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF85F89C5A8816AFB4B8F5F /* Build configuration list for PBXNativeTarget "TVBrowserUITests" */;
+			buildPhases = (
+				9F3FA984E3D9EDB651755B1F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				337819DEA1F79FE4F9DBE2D8 /* PBXTargetDependency */,
+			);
+			name = TVBrowserUITests;
+			packageProductDependencies = (
+			);
+			productName = TVBrowserUITests;
+			productReference = E57489B4F16010099E8CEB41 /* TVBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAA5E9FDB02750F05E87C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					695959FC76F16F975A95D833 = {
+						ProvisioningStyle = Automatic;
+					};
+					E8F9AFDC7BC4B5ABAC8D1D2E = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 695959FC76F16F975A95D833;
+					};
+				};
+			};
+			buildConfigurationList = 7E3DB57FAD31BB676AC43C42 /* Build configuration list for PBXProject "TVBrowser" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EACFF2AA2AD02EB087068562;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0F5CEBB379F84A3875B7515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				695959FC76F16F975A95D833 /* TVBrowser */,
+				E8F9AFDC7BC4B5ABAC8D1D2E /* TVBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C20594E10C3DFA7B694DA19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBEF7F81DD40286857DFB2C /* Assets.xcassets in Resources */,
+				0FDC2C5650FE6897E98A9D95 /* adblock.js in Resources */,
+				92F27F42EFEC57FE5C02A772 /* video.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F3FA984E3D9EDB651755B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05320064945CED7D1386788 /* RemoteControlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB0D5DF7593D4DC282B680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07B969F917B5FA61E6F268A /* AppDelegate.swift in Sources */,
+				30F5BABDF9DCE223ECC85206 /* BrowserViewController.swift in Sources */,
+				892ACC22ADBF976F3EA5B733 /* Cursor.swift in Sources */,
+				821C68459285446C967C057F /* NativeVideoPlayer.swift in Sources */,
+				1511978D1B3A16F1A92C059F /* PageScripts.swift in Sources */,
+				EB86F74192F728519D689038 /* SiteRules.swift in Sources */,
+				3172CEA3E08D17E2B686DCBC /* StartPage.swift in Sources */,
+				E8731C1A180D1035CD61F72E /* Store.swift in Sources */,
+				E059862B6D8CB4D8946F2B43 /* TBWebKitShims.m in Sources */,
+				09AA027CB5D4F836D4CAF329 /* TBWebView.m in Sources */,
+				48A3E86FDBC2FD1FC3916583 /* URLInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		337819DEA1F79FE4F9DBE2D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 695959FC76F16F975A95D833 /* TVBrowser */;
+			targetProxy = 4F6E56DBEE4796376776658A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18174BD4DCE9871F49C2F2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		2D94CEC68CA6705A24342381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = TVBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzhang.tvbrowser;
+				PRODUCT_NAME = TVBrowser;
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TVBrowser/TVBrowser-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		441AA5D7FE807A2E7FA25B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		A687BBAEAA3E5B29124C6265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzhang.tvbrowser.uitests;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = TVBrowser;
+			};
+			name = Release;
+		};
+		BB5D50E5DD49954D3FA65CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = TVBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzhang.tvbrowser;
+				PRODUCT_NAME = TVBrowser;
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TVBrowser/TVBrowser-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		FECDE138D4467BBB3E30C614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzhang.tvbrowser.uitests;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = TVBrowser;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FF85F89C5A8816AFB4B8F5F /* Build configuration list for PBXNativeTarget "TVBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECDE138D4467BBB3E30C614 /* Debug */,
+				A687BBAEAA3E5B29124C6265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E3DB57FAD31BB676AC43C42 /* Build configuration list for PBXProject "TVBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18174BD4DCE9871F49C2F2F8 /* Debug */,
+				441AA5D7FE807A2E7FA25B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC8EB78FCA3EFCFA13DA19D9 /* Build configuration list for PBXNativeTarget "TVBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5D50E5DD49954D3FA65CDA /* Debug */,
+				2D94CEC68CA6705A24342381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AAA5E9FDB02750F05E87C3A /* Project object */;
+}

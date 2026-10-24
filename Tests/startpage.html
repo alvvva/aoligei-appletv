@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>起始页</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0d1117; color: #e6edf3;
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
+  main { padding: 70px 110px 80px; }
+  h1 { font-size: 56px; font-weight: 700; margin: 0 0 36px; letter-spacing: 1px; }
+  .search { display: flex; align-items: center; gap: 24px; text-decoration: none;
+    background: #161b22; border: 3px solid #30363d; border-radius: 28px;
+    padding: 30px 40px; color: #8b949e; font-size: 36px; margin-bottom: 56px; }
+  .search .glass { font-size: 40px; }
+  h2 { font-size: 32px; font-weight: 600; color: #8b949e; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 28px; }
+  .tile { display: flex; flex-direction: column; align-items: center; text-decoration: none;
+    background: #161b22; border: 3px solid #21262d; border-radius: 24px; padding: 32px 16px 26px;
+    color: #e6edf3; min-width: 0; }
+  .icon { width: 104px; height: 104px; border-radius: 26px; display: flex; align-items: center;
+    justify-content: center; font-size: 52px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+  .name { font-size: 28px; font-weight: 600; max-width: 100%; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; }
+  .host { font-size: 22px; color: #8b949e; margin-top: 6px; max-width: 100%; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; }
+  .links { display: flex; gap: 24px; margin-top: 56px; }
+  .links a { text-decoration: none; color: #e6edf3; background: #21262d; border-radius: 18px;
+    padding: 20px 34px; font-size: 28px; }
+  .hint { font-size: 28px; color: #8b949e; }
+</style></head>
+<body><main>
+  <h1>TV 浏览器</h1>
+  <a class="search" href="tvbrowser://search"><span class="glass">🔍</span>
+    <span>输入网址，或用 Google 搜索</span></a>
+  <h2>收藏</h2>
+  <div class="grid">
+  <a class="tile" href="https://www.google.com">
+  <div class="icon" style="background:#539bf5">G</div>
+  <div class="name">Google</div>
+  <div class="host">google.com</div>
+</a>
+<a class="tile" href="https://www.youtube.com">
+  <div class="icon" style="background:#539bf5">Y</div>
+  <div class="name">YouTube</div>
+  <div class="host">youtube.com</div>
+</a>
+<a class="tile" href="https://www.bilibili.com">
+  <div class="icon" style="background:#e5534b">哔</div>
+  <div class="name">哔哩哔哩</div>
+  <div class="host">bilibili.com</div>
+</a>
+<a class="tile" href="https://www.baidu.com">
+  <div class="icon" style="background:#539bf5">百</div>
+  <div class="name">百度</div>
+  <div class="host">baidu.com</div>
+</a>
+<a class="tile" href="https://zh.wikipedia.org">
+  <div class="icon" style="background:#539bf5">维</div>
+  <div class="name">维基百科</div>
+  <div class="host">zh.wikipedia.org</div>
+</a>
+<a class="tile" href="https://www.bing.com">
+  <div class="icon" style="background:#e5534b">B</div>
+  <div class="name">Bing</div>
+  <div class="host">bing.com</div>
+</a>
+  </div>
+  
+  <div class="links">
+    <a href="tvbrowser://bookmarks">管理收藏</a>
+    <a href="tvbrowser://history">历史记录</a>
+    <a href="tvbrowser://menu">菜单与设置</a>
+    <a href="tvbrowser://help">遥控器操作说明</a>
+  </div>
+</main></body></html>

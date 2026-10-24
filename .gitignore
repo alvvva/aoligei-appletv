@@ -1,0 +1,6 @@
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+安装日志.txt
