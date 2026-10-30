@@ -362,7 +362,7 @@ final class BrowserViewController: UIViewController {
 
     /// 光标移动的放大倍数：慢慢滑时倍数小，方便精确对准；快速滑时倍数大，一下就能划过屏幕。
     static func cursorGain(forDelta magnitude: CGFloat, speed: CGFloat) -> CGFloat {
-        let acceleration = min(1.6, 0.45 + magnitude / 25)
+        let acceleration = min(1.6, 0.3 + magnitude / 28)
         return speed * acceleration
     }
 
@@ -1538,8 +1538,8 @@ extension BrowserViewController {
         let speed = CGFloat(Store.defaultCursorSpeed)
         let slowGain = Self.cursorGain(forDelta: 2, speed: speed)
         let fastGain = Self.cursorGain(forDelta: 40, speed: speed)
-        check("光标慢速微调更精细", slowGain < 0.5, "gain=\(slowGain)")
-        check("光标快速滑动仍然够快", fastGain > 1.2, "gain=\(fastGain)")
+        check("光标慢速微调更精细", slowGain < 0.3, "gain=\(slowGain)")
+        check("光标快速滑动仍然够快", fastGain > 0.85, "gain=\(fastGain)")
         check("光标是圆点，点击位置在圆心", Cursor.hotspot.x == Cursor.hotspot.y && cursorView.image?.size.width == Cursor.hotspot.x * 2)
 
         // 9. 去广告、拦弹窗、视频检测
@@ -1631,7 +1631,7 @@ extension BrowserViewController {
             _ = await stWaitUntil(5) { self.nativePlayer == nil && self.presentedViewController == nil }
         }
 
-        // 15. 直播：CGTN 在爱尔兰能播；RTHK 只对香港开放，被拒绝时要自动退出并提示，不能停在黑屏
+        // 15. 直播：CGTN 在爱尔兰能播；播不了的直播要自动退出并提示，不能停在黑屏
         frameReports = [:]
         topReport = nil
         _ = await stLoad(timeout: 30) { wv.loadURL(URL(string: "https://www.cgtn.com/tv")!) }
@@ -1651,16 +1651,17 @@ extension BrowserViewController {
         frameReports = [:]
         topReport = nil
         lastPlaybackFailure = nil
-        let rthkLoaded = await stLoad(timeout: 30) { wv.loadURL(URL(string: "https://www.rthk.hk/tv/dtt31")!) }
-        let rthkMedia = await stWaitUntil(25) { self.mediaURL?.absoluteString.contains(".m3u8") == true }
-        if rthkLoaded && rthkMedia {
+        // RTHK 现在在网页上就直接拒绝香港以外的地区，拿不到视频地址了；改用一个不存在的直播地址，检查同一条退出路径
+        let deniedPage = "<html><body><video controls src=\"https://english-livebkali.cgtn.com/live/tvb-selftest-missing.m3u8\"></video></body></html>"
+        _ = await stLoad { wv.loadHTMLString(deniedPage, baseURL: URL(string: "https://selftest.local/denied")) }
+        let deniedMedia = await stWaitUntil(10) { self.mediaURL?.absoluteString.contains("tvb-selftest-missing") == true }
+        if deniedMedia {
             playVideoFullscreen()
             let exited = await stWaitUntil(35) { self.nativePlayer == nil && self.presentedViewController == nil }
-            let reasonOK = (lastPlaybackFailure?.contains("地区") ?? false) || (lastPlaybackFailure?.contains("加密") ?? false)
-            check("播不了的直播（地区限制 / 版权加密）：自动退出黑屏并提示原因", exited && reasonOK && !webFullscreen,
+            check("播不了的直播（地址失效 / 地区限制）：自动退出黑屏并提示原因", exited && lastPlaybackFailure != nil && !webFullscreen,
                   "exited=\(exited) reason=\(lastPlaybackFailure ?? "nil") webFullscreen=\(webFullscreen)")
         } else {
-            check("播不了的直播（地区限制 / 版权加密）：自动退出黑屏并提示原因", false, "RTHK 页面没有找到视频 loaded=\(rthkLoaded)")
+            check("播不了的直播（地址失效 / 地区限制）：自动退出黑屏并提示原因", false, "测试页没有找到视频")
         }
 
         // 16. 小红书直播：列表页用电脑版；进直播间自动换手机版，拿到 m3u8 用原生播放器播；离开后换回来

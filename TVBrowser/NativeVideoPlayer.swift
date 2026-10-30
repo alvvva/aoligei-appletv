@@ -141,6 +141,11 @@ final class NativeVideoPlayer: NSObject, AVPlayerViewControllerDelegate {
         }
         for event in events.reversed() {
             if let message = accessErrorMessage(statusCode: event.errorStatusCode) { return message }
+            // 有时错误码是 CoreMedia 自己的（比如 -12938），HTTP 状态码只写在说明里：「HTTP 404: File Not Found」
+            if let comment = event.errorComment, let range = comment.range(of: #"HTTP (\d{3})"#, options: .regularExpression),
+               let code = Int(comment[range].dropFirst(5)), let message = accessErrorMessage(statusCode: code) {
+                return message
+            }
         }
         return nil
     }

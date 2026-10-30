@@ -23,7 +23,7 @@ final class Store {
         static let searchEngine = "searchEngine"
         static let bookmarks = "bookmarks"
         static let history = "history"
-        static let cursorSpeed = "cursorSpeedV2"
+        static let cursorSpeed = "cursorSpeedV3"
         static let adBlock = "adBlockEnabled"
         static let autoFullscreen = "autoFullscreenVideo"
         static let siteZoom = "siteZoom"
@@ -106,9 +106,9 @@ final class Store {
         set { defaults.set(newValue.rawValue, forKey: Key.searchEngine) }
     }
 
-    /// 光标速度档位：慢 / 中 / 快。
-    static let cursorSpeeds: [(name: String, value: Double)] = [("慢", 0.6), ("中", 0.85), ("快", 1.2)]
-    static let defaultCursorSpeed = 0.85
+    /// 光标速度档位：很慢 / 慢 / 中 / 快。原来的「中」(0.85) 太灵敏，现在是「快」。
+    static let cursorSpeeds: [(name: String, value: Double)] = [("很慢", 0.35), ("慢", 0.45), ("中", 0.6), ("快", 0.85)]
+    static let defaultCursorSpeed = 0.6
 
     /// 内置的网站缩放比例。Apple TV 的网页引擎放大时不会重新排版，放大的页面会超出屏幕，
     /// 所以欧乐和酷播都保持 100%（它们的电脑版在 1920 宽的电视上正好铺满）。
